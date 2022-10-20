@@ -95,7 +95,7 @@ def parse_note(self, sample: Wave_read):
 class Main:
   def __init__(self, file):
     self.window = Tk()
-    self.window.title("Music Note Detection")
+    self.window.title("Music Note Detection App")
     self.window.geometry("400x400")
     self.command_ = lambda : parse_note(self, open(file))
     self.analysis = Button(self.window, text="Button", command=self.command_)
