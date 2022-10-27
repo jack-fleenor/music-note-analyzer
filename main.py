@@ -1,3 +1,4 @@
+from pathlib import Path
 import numpy as np
 from struct import unpack
 from wave import open, Wave_read
@@ -108,4 +109,4 @@ if __name__ == '__main__':
   rel_path = "wav files/c6.wav"
   abs_file_path = os.path.join(script_dir, rel_path)
   print("Starting application...")
-  Main(abs_file_path)
+  Main( abs_file_path )
